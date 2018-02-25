@@ -68,10 +68,6 @@ $(function(){
 	addPage('.book3','one',8);
 	addPage('.book4','four',9);
 	addPage('.book5','five',18);
-//	nowIndex = 1;
-//	bookIndex = 1;
-//	$('.book'+bookIndex).find('.bookIn').eq(0).addClass('fanshu');
-	
 	//左右滑动
 	touch.on(document, "swipeleft", function(){
 		if(nowIndex!=-1)
@@ -125,7 +121,7 @@ function home(){
 	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
 		(function() {
 			window.scrollReveal = new scrollReveal({
-				reset: true
+				reset: false
 			});
 		})();
 	};
@@ -150,7 +146,7 @@ function loadinging(){
 				setTimeout(function(){
 					$('#homepage').fadeOut(1000);
 					home();
-				},2000);
+				},2800);
 			},500);
 			
 		}
